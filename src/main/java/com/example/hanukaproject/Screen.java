@@ -98,7 +98,12 @@ public class Screen extends Application {
 
         drawObjects(entities);
         drawGrid();
-        updatePlayerLabels(playerHandler.getPlayers());
+
+        if(playerHandler.getPlayerAmount() == 1){
+            gameOver(playerHandler.getCurrentPlayer());
+        }else {
+            updatePlayerLabels(playerHandler.getPlayers());
+        }
         highlightCurrentPlayer(playerHandler.getCurrentPlayer());
 
     }

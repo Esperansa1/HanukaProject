@@ -54,7 +54,6 @@ public class PlayerHandler {
             return players[currentPlayerIndex]; // returns the first player in the array
         } // Reset the circle
         currentPlayerIndex++;
-        System.out.println(currentPlayerIndex);
         return this.players[currentPlayerIndex];
     }
 
@@ -123,7 +122,6 @@ public class PlayerHandler {
         }
 
         currentPlayerIndex--;
-        System.out.println(currentPlayerIndex);
 
     }
 

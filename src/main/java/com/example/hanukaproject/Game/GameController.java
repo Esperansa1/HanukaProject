@@ -36,10 +36,6 @@ public class GameController {
             boardManager.updateBoard();
             Screen.INSTANCE.drawGame(boardManager.getBoard(), playerHandler);
         }
-
-        Screen.INSTANCE.gameOver(playerHandler.getCurrentPlayer());
-        boardManager.updateBoard();
-        Screen.INSTANCE.drawGame(boardManager.getBoard(), playerHandler);
     }
 
     private void moveCurrentPlayer(){
